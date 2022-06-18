@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Njimoke Rane Soulemanou" />
+    <title>VISA CARD</title>
+
+    <!-- links -->
+    <link rel="stylesheet" href="/dist/style.css" />
+    <link rel="icon" href="/Images/chip.png" type="image/x-icon" />
+  </head>
+  <body>
+    <!-- container -->
+    <div class="container">
+      <div class="card">
+        <div class="cardImage"></div>
+        <header>
+          <img src="/Images/chip.png" alt="chip" class="chip" />
+          <img src="/Images/visa.png" alt="visa logo" class="visaLogo" />
+        </header>
+        <main>
+          <p class="cardNumber"></p>
+        </main>
+        <footer class="holderInfo">
+          <div class="holder">
+            <p class="holderName">CARD HOLDER</p>
+            <p class="holderNameField"></p>
+          </div>
+          <div class="date">
+            <p class="dateExpire">EXPIRE</p>
+            <p class="dateExpireField"></p>
+          </div>
+        </footer>
+      </div>
+      <section class="heading"><h2>click on the card to field it</h2></section>
+      <form action="#" class="form">
+        <p class="cardNumbersInput">
+          <label>
+            CARD NUMBER <br />
+            <input
+              type="text"
+              name="cardNumber"
+              class="cardNumbers cardNumber1"
+              required
+              placeholder="1233"
+            />
+            <input
+              type="text"
+              name="cardNumber"
+              class="cardNumbers cardNumber2"
+              required
+              placeholder="5544"
+            />
+            <input
+              type="text"
+              name="cardNumber"
+              class="cardNumbers cardNumber3"
+              required
+              placeholder="6666"
+            />
+            <input
+              type="text"
+              name="cardNumber"
+              class="cardNumbers cardNumber4"
+              required
+              placeholder="7777"
+            />
+          </label>
+        </p>
+
+        <p class="cardHolderInput">
+          <label>
+            CARD HOLDER <br />
+            <input
+              type="text"
+              name="cardHolder"
+              class="cardHolder"
+              required
+              placeholder="JOHN DOE"
+            />
+          </label>
+        </p>
+
+        <p class="cardDataInputs">
+          <label class="DateInput">
+            EXPIRATION DATE <br />
+
+            <input
+              type="number"
+              class="month cardDataInput"
+              required
+              min="1"
+              max="12"
+            />
+
+            <input
+              type="number"
+              class="year cardDataInput"
+              min="2020"
+              max="2030"
+              required
+            />
+          </label>
+
+          <label class="codeInput"
+            >CCV <br />
+            <input type="text" class="code cardDataInput" required />
+          </label>
+        </p>
+        <p class="btn">
+          <button class="submit" type="submit" id="button">SUBMIT</button>
+        </p>
+      </form>
+    </div>
+    <script src="/App/JS/main.js"></script>
+  </body>
+</html>
