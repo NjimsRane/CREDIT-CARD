@@ -1,0 +1,20 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  // border: 1px solid red;
+}
+html {
+  font-size: 62.5%;
+}
+:root {
+  --BG-COLOR: crimson;
+  --BG-COLOR1: teal;
+  --BG-COLOR2: #fff;
+  --FONT-FAMILY: sans-serif, helvetica, verdana;
+  --TRANSITION: all 0.5s linear;
+}
+body {
+  min-height: 100vh;
+  width: 100%;
+}

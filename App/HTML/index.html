@@ -1,134 +1,38 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Njimoke Rane Soulemanou" />
-    <title>VISA CARD</title>
 
-    <!-- links -->
     <link rel="stylesheet" href="/dist/style.css" />
-    <link rel="icon" href="/Images/chip.png" type="image/x-icon" />
+    <title>CREDIT CARD VISA</title>
   </head>
   <body>
-    <!-- container -->
-    <div class="container">
-      <!-- card section -->
-      <div class="cardFront">
-        <div class="cardImage"></div>
-        <header>
-          <img src="/Images/chip.png" alt="chip" class="chip" />
-          <img src="/Images/visa.png" alt="visa logo" class="visaLogo" />
-        </header>
-        <main>
-          <p class="cardNumber"></p>
-        </main>
-        <footer class="holderInfo">
-          <div class="holder">
-            <p class="holderName">CARD HOLDER</p>
-            <p class="holderNameField"></p>
-          </div>
-          <div class="date">
-            <p class="dateExpire">EXPIRED</p>
-            <p class="dateExpireField"></p>
-          </div>
-        </footer>
-      </div>
-
-      <div class="cardBack">
-        <div class="cardImage"></div>
-        <div class="blackBox"></div>
-        <div class="codeBox">
-          <img
-            src="/Images/pattern.png"
-            alt="card pattern"
-            class="cardPattern"
-          />
-          <div class="cardCode"></div>
-        </div>
-        <img src="/Images/visa.png" alt="visa logo" class="visaLogo" />
-      </div>
-      <!-- heading section -->
-      <section class="heading"><h2>click on the card to field it</h2></section>
-
-      <!-- form section -->
+    <div class="boxForm">
+      <h2>CLICK ON THE CARD TO FIELD IT</h2>
       <form action="#" class="form">
-        <p class="cardNumbersInput">
-          <label>
-            CARD NUMBER <br />
-            <input
-              type="text"
-              name="cardNumber"
-              class="cardNumbers cardNumber1"
-              required
-              placeholder="1233"
-            />
-            <input
-              type="text"
-              name="cardNumber"
-              class="cardNumbers cardNumber2"
-              required
-              placeholder="5544"
-            />
-            <input
-              type="text"
-              name="cardNumber"
-              class="cardNumbers cardNumber3"
-              required
-              placeholder="6666"
-            />
-            <input
-              type="text"
-              name="cardNumber"
-              class="cardNumbers cardNumber4"
-              required
-              placeholder="7777"
-            />
+        <p class="cardNumbers">
+          <label
+            >CARD NUMBER <br />
+            <input type="text" name="" class="cardNumber cardNumber1" />
+            <input type="text" name="" class="cardNumber cardNumber2" />
+            <input type="text" name="" class="cardNumber cardNumber3" />
+            <input type="text" name="" class="cardNumber cardNumber4" />
           </label>
         </p>
+        <p class="holderName">
+          <label
+            >Holder Name <br />
 
-        <p class="cardHolderInput">
-          <label>
-            CARD HOLDER <br />
-            <input
-              type="text"
-              name="cardHolder"
-              class="cardHolder"
-              required
-              placeholder="JOHN DOE"
-            />
+            <input type="text" name="holderName" />
           </label>
         </p>
+        <p class="dateCvvInfo">
+          <div class="dateInfo">
 
-        <p class="cardDataInputs">
-          <label class="DateInput">
-            EXPIRATION DATE <br />
-
-            <input
-              type="number"
-              class="month cardDataInput"
-              required
-              min="1"
-              max="12"
-            />
-
-            <input
-              type="number"
-              class="year cardDataInput"
-              min="2020"
-              max="2030"
-              required
-            />
-          </label>
-
-          <label class="codeInput"
-            >CCV <br />
-            <input type="text" class="code cardDataInput" required />
-          </label>
-        </p>
-        <p class="btn">
-          <button class="submit" type="submit" id="button">SUBMIT</button>
+          </div>
         </p>
       </form>
     </div>
