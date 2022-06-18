@@ -1,5 +1,5 @@
 //variables
-const card = document.querySelector(".card");
+const card = document.querySelector(".cardFront");
 const button = document.querySelector("#button");
 
 const cardNum1 = document.querySelector(".cardNumber1");
@@ -7,6 +7,9 @@ const cardNum2 = document.querySelector(".cardNumber2");
 const cardNum3 = document.querySelector(".cardNumber3");
 const cardNum4 = document.querySelector(".cardNumber4");
 const cardNumber = document.querySelector(".cardNumber");
+
+const cardCode = document.querySelector(".cardCode");
+const code = document.querySelector(".code");
 
 
 const holderNameField = document.querySelector(".holderNameField");
@@ -31,6 +34,7 @@ function fielCard(){
   let cardHolderValue = cardHolder.value.toUpperCase()
 
   let date;
+  let codeCVV = code.value;
 
   if (month.value === "" || year.value === "")return;
   
@@ -46,4 +50,5 @@ function fielCard(){
   cardNumber.innerText = cardNums;
   holderNameField.innerText = cardHolderValue;
   dateExpireField.innerText = date;
+  cardCode.innerText = codeCVV;
 }

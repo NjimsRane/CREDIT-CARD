@@ -39,7 +39,7 @@ body .container {
   flex-direction: column;
   align-items: center;
 }
-body .container .card {
+body .container .cardFront {
   position: absolute;
   z-index: 1;
   width: 100%;
@@ -56,7 +56,7 @@ body .container .card {
   justify-content: space-between;
   color: var(--CONTAINER-BG-COLOR);
 }
-body .container .card .cardImage {
+body .container .cardFront .cardImage {
   position: absolute;
   height: 100%;
   width: 100%;
@@ -68,37 +68,86 @@ body .container .card .cardImage {
   background-size: cover;
   border-radius: 10px;
 }
-body .container .card header {
+body .container .cardFront header {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-body .container .card header .chip {
+body .container .cardFront header .chip {
   width: 4em;
 }
-body .container .card header .visaLogo {
+body .container .cardFront header .visaLogo {
   width: 6em;
 }
-body .container .card main {
+body .container .cardFront main {
   font-size: 2.5rem;
   text-align: center;
   font-weight: 600;
   word-spacing: 10px;
 }
-body .container .card .holderInfo {
+body .container .cardFront .holderInfo {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-body .container .card .holderInfo .holderName,
-body .container .card .holderInfo .dateExpire {
+body .container .cardFront .holderInfo .holderName,
+body .container .cardFront .holderInfo .dateExpire {
   color: rgb(148, 148, 148);
 }
-body .container .card .holderInfo .holderNameField,
-body .container .card .holderInfo .dateExpireField {
+body .container .cardFront .holderInfo .holderNameField,
+body .container .cardFront .holderInfo .dateExpireField {
   font-size: 1.2rem;
   font-weight: 700;
   margin-block: 0.3em;
+}
+body .container .cardBack {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  max-width: 32em;
+  border-radius: 10px;
+  height: 18em;
+  background-image: linear-gradient(45deg, var(--CARD-COLOR1), var(--CARD-COLOR2));
+}
+body .container .cardBack .cardImage {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/Images/map.png);
+  background-position: center center;
+  background-size: cover;
+  border-radius: 10px;
+}
+body .container .cardBack .blackBox {
+  width: 32em;
+  height: 3.5em;
+  background-color: #111;
+  margin-block: 2em;
+}
+body .container .cardBack .codeBox {
+  margin-top: 4em;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+body .container .cardBack .codeBox .cardPattern {
+  width: 24em;
+}
+body .container .cardBack .codeBox .cardCode {
+  background-color: var(--CONTAINER-BG-COLOR);
+  padding: 0.7em 1.3em;
+  font-family: var(--FONT-FAMILY);
+  font-size: 1.2rem;
+  border-radius: 3px;
+  font-weight: 600;
+  text-align: center;
+}
+body .container .cardBack .visaLogo {
+  width: 6em;
+  margin: 2em 0 0 25em;
 }
 body .container .cardChange {
   top: 9%;
@@ -156,6 +205,10 @@ body .container .form .cardDataInputs .cardDataInput {
 body .container .form .cardDataInputs .year {
   margin-left: 0.3em;
 }
+body .container .form .cardDataInputs .code {
+  text-align: center;
+  font-family: var(--FONT-FAMILY);
+}
 body .container .form .btn {
   margin-block: 2em;
 }
@@ -168,4 +221,5 @@ body .container .form .btn .submit {
   font-size: 1.5rem;
   border-radius: 5px;
   cursor: pointer;
+  outline: none;
 }/*# sourceMappingURL=style.css.map */

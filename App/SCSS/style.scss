@@ -47,7 +47,7 @@ body {
 
     //card section
 
-    .card {
+    .cardFront {
       position: absolute;
       z-index: 1;
 
@@ -127,6 +127,68 @@ body {
         }
       }
     }
+    .cardBack {
+      position: absolute;
+      z-index: 1;
+
+      width: 100%;
+      max-width: 32em;
+      border-radius: 10px;
+      height: 18em;
+
+      background-image: linear-gradient(
+        45deg,
+        var(--CARD-COLOR1),
+        var(--CARD-COLOR2)
+      );
+      .cardImage {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: -1;
+
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+          ),
+          url(/Images/map.png);
+        background-position: center center;
+        background-size: cover;
+        border-radius: 10px;
+      }
+
+      .blackBox {
+        width: 32em;
+        height: 3.5em;
+        background-color: #111;
+        margin-block: 2em;
+      }
+
+      .codeBox {
+        margin-top: 4em;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        .cardPattern {
+          width: 24em;
+        }
+        .cardCode {
+          background-color: var(--CONTAINER-BG-COLOR);
+          padding: 0.7em 1.3em;
+          font-family: var(--FONT-FAMILY);
+          font-size: 1.2rem;
+          border-radius: 3px;
+          font-weight: 600;
+          text-align: center;
+        }
+      }
+      .visaLogo {
+        width: 6em;
+        margin: 2em 0 0 25em;
+      }
+    }
     .cardChange {
       top: 9%;
     }
@@ -190,6 +252,10 @@ body {
         .year {
           margin-left: 0.3em;
         }
+        .code {
+          text-align: center;
+          font-family: var(--FONT-FAMILY);
+        }
       }
       .btn {
         margin-block: 2em;
@@ -202,6 +268,7 @@ body {
           font-size: 1.5rem;
           border-radius: 5px;
           cursor: pointer;
+          outline: none;
         }
       }
     }
