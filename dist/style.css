@@ -20,7 +20,7 @@ html {
 body {
   min-height: 100vh;
   width: 100%;
-  background-image: radial-gradient(teal, coral);
+  background-image: radial-gradient(rgb(54, 248, 248), rgb(218, 62, 6));
   display: flex;
   justify-content: center;
   align-items: flex-start;

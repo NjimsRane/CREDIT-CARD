@@ -31,7 +31,9 @@ function fielCard(){
   let cardHolderValue = cardHolder.value.toUpperCase()
 
   let date;
+
   if (month.value === "" || year.value === "")return;
+  
   if ((month.value) < 10 ){
     date = `0${month.value} / ${year.value}`
   }else{
