@@ -25,7 +25,9 @@ body {
   background-image: radial-gradient(var(--BG-COLOR), var(--BG-COLOR1));
 }
 body .boxForm {
-  background-color: var(--BG-COLOR2);
+  background-color: #010111;
+  background: radial-gradient(black 15%, transparent 16%) 0 0, radial-gradient(black 15%, transparent 16%) 8px 8px, radial-gradient(rgba(0, 0, 0, 0.1) 15%, transparent 26%) 0 1px, radial-gradient(rgba(0, 0, 0, 0.1) 15%, transparent 26%) 8px 9px;
+  background-size: 16px 16px;
 }
 
 body {
@@ -35,14 +37,71 @@ body h2 {
   letter-spacing: 2px;
   font-size: 2rem;
   text-align: center;
+  color: var(--BG-COLOR2);
 }
 
 .boxForm {
   width: 100%;
-  width: 32em;
+  max-width: 36em;
   display: flex;
   flex-direction: column;
   margin: 5em auto;
   border-radius: 8px;
   padding: 2em;
+}
+.boxForm .form {
+  display: flex;
+  flex-direction: column;
+  margin-block: 15em 2em;
+}
+.boxForm .form input {
+  height: 2.5em;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid rgb(255, 255, 255);
+  margin-top: 0.2em;
+}
+.boxForm .form p {
+  margin-block: 1em;
+}
+.boxForm .form label {
+  font-size: 0.8rem;
+  font-weight: 800;
+  color: var(--BG-COLOR2);
+}
+.boxForm .form .cardNumbers .cardNumber {
+  width: 5em;
+  text-align: center;
+}
+.boxForm .form .cardNumbers .cardNumber:not(:nth-of-type(1)) {
+  margin-left: 0.95em;
+}
+.boxForm .form .holderName input {
+  width: 97.5%;
+}
+.boxForm .form .dateCvvInfos {
+  display: flex;
+}
+.boxForm .form .dateCvvInfos .year {
+  margin-left: 0.5em;
+}
+.boxForm .form .dateCvvInfos .cvvNumber {
+  margin-left: 12.5em;
+}
+.boxForm .form .dateCvvInfos .cvvNumber input {
+  width: 5em;
+  text-align: center;
+}
+.boxForm .form .button {
+  margin-inline: auto;
+}
+.boxForm .form .button .btn {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: var(--BG-COLOR1);
+  padding: 0.6em 9em;
+  border-radius: 3px;
+  color: var(--BG-COLOR2);
+  letter-spacing: 2px;
 }/*# sourceMappingURL=index.css.map */

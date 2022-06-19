@@ -11,7 +11,51 @@
   </head>
   <body>
     <div class="boxForm">
+      <div class="cardre">
+        <div class="container">
+          <div class="cardImage"></div>
+          <div class="frontCard card">
+            <header>
+              <img src="/Images/chip.png" alt="chip" class="chip" />
+              <img src="/Images/visa.png" alt="visaLogo" class="visaLogo" />
+            </header>
+
+            <main>
+              <p class="carNum1">0000</p>
+              <p class="carNum2">0000</p>
+              <p class="carNum3">0000</p>
+              <p class="carNum4">0000</p>
+            </main>
+
+            <footer>
+              <div class="holderInfo">
+                <p class="cardHolder">CARD HOLDER</p>
+                <p class="holderField field"></p>
+              </div>
+              <div class="dateInfo">
+                <p class="dateExpire">EXPIRED</p>
+                <p class="dateField field"></p>
+              </div>
+            </footer>
+          </div>
+
+          <div class="backCard card">
+            <div class="blackBar"></div>
+            <div class="blockCvv">
+              <img src="/Images/pattern.png" alt="pattern" class="pattern" />
+              <div class="cvvCode"></div>
+            </div>
+            <p class="moto">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint
+              quae pariatur repellat fugit. Libero, id?
+            </p>
+            <img src="/Images/visa.png" alt="visaLogo" class="visaLogo" />
+          </div>
+        </div>
+      </div>
       <h2>CLICK ON THE CARD TO FIELD IT</h2>
+
+      <!-- form section -->
       <form action="#" class="form">
         <p class="cardNumbers">
           <label
@@ -22,17 +66,33 @@
             <input type="text" name="" class="cardNumber cardNumber4" />
           </label>
         </p>
+
         <p class="holderName">
           <label
-            >Holder Name <br />
-
+            >CARD HOLDER <br />
             <input type="text" name="holderName" />
           </label>
         </p>
-        <p class="dateCvvInfo">
-          <div class="dateInfo">
 
-          </div>
+        <p class="dateCvvInfos">
+          <label
+            >EXPIRED DATE <br />
+            <input type="number" class="month dateCvvInfo" min="1" max="12" />
+            <input
+              type="number"
+              class="year dateCvvInfo"
+              min="2020"
+              max="2030"
+            />
+          </label>
+
+          <label class="cvvNumber"
+            >CVV <br />
+            <input type="text" class="dateCvvInfo" class="cvvNum" />
+          </label>
+        </p>
+        <p class="button">
+          <button type="submit" class="btn">SUBMIT</button>
         </p>
       </form>
     </div>
