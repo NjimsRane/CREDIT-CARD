@@ -76,11 +76,14 @@ body h2 {
 .boxForm .form .cardNumbers .cardNumber:not(:nth-of-type(1)) {
   margin-left: 0.95em;
 }
-.boxForm .form .holderName input {
+.boxForm .form .holder input {
   width: 97.5%;
 }
 .boxForm .form .dateCvvInfos {
   display: flex;
+}
+.boxForm .form .dateCvvInfos .dateCvvInfo {
+  text-align: center;
 }
 .boxForm .form .dateCvvInfos .year {
   margin-left: 0.5em;
@@ -92,10 +95,10 @@ body h2 {
   width: 5em;
   text-align: center;
 }
-.boxForm .form .button {
+.boxForm .button {
   margin-inline: auto;
 }
-.boxForm .form .button .btn {
+.boxForm .button .btn {
   border: none;
   outline: none;
   cursor: pointer;
@@ -104,4 +107,135 @@ body h2 {
   border-radius: 3px;
   color: var(--BG-COLOR2);
   letter-spacing: 2px;
+}
+
+.card {
+  width: 100%;
+  max-width: 32em;
+  height: 20em;
+  position: absolute;
+  top: 27em;
+  cursor: pointer;
+  transition: var(--TRANSITION);
+  perspective: 1000px;
+  user-select: none;
+}
+.card .visaLogo {
+  width: 4em;
+}
+.card .container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  transition: all 1s;
+  transform-style: preserve-3d;
+}
+.card .container .cardImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/Images/map.png);
+  background-position: center center;
+  background-size: cover;
+  border-radius: 10px;
+}
+.card .container .frontCard {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  padding: 1em 2em;
+  z-index: 1;
+  background-image: linear-gradient(45deg, var(--BG-COLOR1), var(--BG-COLOR));
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card .container .frontCard header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card .container .frontCard header .chip {
+  width: 4em;
+}
+.card .container .frontCard main {
+  color: var(--BG-COLOR2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 2rem;
+}
+.card .container .frontCard footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #999;
+}
+.card .container .frontCard footer .field {
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-top: 0.4em;
+}
+.card .container .backCard {
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  padding: 1em 2em;
+  z-index: 1;
+  padding: 0;
+  background-image: linear-gradient(45deg, var(--BG-COLOR1), var(--BG-COLOR));
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card .container .backCard .blackBar {
+  width: 100%;
+  height: 3em;
+  background-color: #111;
+  margin-block: 2em;
+}
+.card .container .backCard .blockCvv {
+  display: flex;
+  align-items: center;
+  margin-inline: 1em;
+}
+.card .container .backCard .blockCvv .pattern {
+  width: 25em;
+}
+.card .container .backCard .blockCvv .cvvCode {
+  background-color: var(--BG-COLOR2);
+  height: 2em;
+  width: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.card .container .backCard .moto {
+  color: var(--BG-COLOR2);
+  margin-inline: 1em;
+}
+.card .container .backCard .visaLogo {
+  margin-left: 26em;
+  margin-bottom: 1em;
+}
+.card:hover .container {
+  transform: rotateY(-180deg);
+}
+
+.cardMove {
+  top: 6em;
 }/*# sourceMappingURL=style.css.map */

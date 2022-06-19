@@ -39,13 +39,16 @@
         }
       }
     }
-    .holderName {
+    .holder {
       input {
         width: 97.5%;
       }
     }
     .dateCvvInfos {
       display: flex;
+      .dateCvvInfo {
+        text-align: center;
+      }
 
       .year {
         margin-left: 0.5em;
@@ -58,19 +61,19 @@
         }
       }
     }
-    .button {
-      margin-inline: auto;
-      .btn {
-        border: none;
-        outline: none;
-        cursor: pointer;
+  }
+  .button {
+    margin-inline: auto;
+    .btn {
+      border: none;
+      outline: none;
+      cursor: pointer;
 
-        background-color: var(--BG-COLOR1);
-        padding: 0.6em 9em;
-        border-radius: 3px;
-        color: var(--BG-COLOR2);
-        letter-spacing: 2px;
-      }
+      background-color: var(--BG-COLOR1);
+      padding: 0.6em 9em;
+      border-radius: 3px;
+      color: var(--BG-COLOR2);
+      letter-spacing: 2px;
     }
   }
 }
