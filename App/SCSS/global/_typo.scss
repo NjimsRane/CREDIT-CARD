@@ -1,10 +1,52 @@
 body {
   font-family: var(--FONT-FAMILY);
 
-  h2 {
-    letter-spacing: 2px;
-    font-size: 2rem;
-    text-align: center;
-    color: var(--BG-COLOR2);
+  .boxForm {
+    h2 {
+      letter-spacing: 2px;
+      font-size: 2rem;
+      text-align: center;
+      color: var(--BG-COLOR2);
+    }
+
+    .card {
+      .frontCard {
+        main {
+          font-size: 2rem;
+        }
+        footer {
+          font-size: 1.2rem;
+        }
+      }
+    }
+
+    .form {
+      label {
+        font-size: 0.8rem;
+      }
+
+      .cardNumbers {
+        .cardNumber {
+          text-align: center;
+        }
+      }
+
+      .dateCvvInfos {
+        .dateCvvInfo {
+          text-align: center;
+        }
+
+        .cvvNumber {
+          input {
+            text-align: center;
+          }
+        }
+      }
+    }
+    .button {
+      .btn {
+        letter-spacing: 2px;
+      }
+    }
   }
 }

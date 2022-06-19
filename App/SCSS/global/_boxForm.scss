@@ -26,15 +26,13 @@
       margin-block: 1em;
     }
     label {
-      font-size: 0.8rem;
       font-weight: 800;
-      color: var(--BG-COLOR2);
     }
 
     .cardNumbers {
       .cardNumber {
         width: 5em;
-        text-align: center;
+
         &:not(:nth-of-type(1)) {
           margin-left: 0.95em;
         }
@@ -49,10 +47,6 @@
     .dateCvvInfos {
       display: flex;
 
-      .dateCvvInfo {
-        text-align: center;
-      }
-
       .year {
         margin-left: 0.5em;
       }
@@ -62,7 +56,6 @@
 
         input {
           width: 5em;
-          text-align: center;
         }
       }
     }
@@ -74,12 +67,11 @@
     .btn {
       border: none;
       outline: none;
+
       cursor: pointer;
 
       padding: 0.6em 9em;
       border-radius: 3px;
-
-      letter-spacing: 2px;
     }
   }
 }

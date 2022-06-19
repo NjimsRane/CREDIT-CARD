@@ -74,15 +74,13 @@
       }
       main {
         @include flexBOx();
-
-        font-size: 2rem;
       }
       footer {
         @include flexBOx();
 
         .field {
           font-weight: 700;
-          font-size: 1.2rem;
+
           margin-top: 0.4em;
         }
       }

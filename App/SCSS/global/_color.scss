@@ -11,6 +11,12 @@ body {
 
     background-size: 16px 16px;
 
+    .form {
+      label {
+        color: var(--BG-COLOR2);
+      }
+    }
+
     .button {
       .btn {
         background-color: var(--BG-COLOR1);

@@ -7,10 +7,14 @@ const cardNum2 = document.querySelector(".cardNum2");
 const cardNum3 = document.querySelector(".cardNum3");
 const cardNum4 = document.querySelector(".cardNum4");
 
+
+
 const cardNumber1 = document.querySelector(".cardNumber1");
 const cardNumber2 = document.querySelector(".cardNumber2");
 const cardNumber3 = document.querySelector(".cardNumber3");
 const cardNumber4 = document.querySelector(".cardNumber4");
+
+
 
 const holderField = document.querySelector(".holderField");
 const holderName = document.querySelector(".holderName");
@@ -39,11 +43,13 @@ function fieldCard(){
   cardNum2.innerText = cardNumber2.value;
   cardNum3.innerText = cardNumber3.value;
   cardNum4.innerText = cardNumber4.value;
+  
 
   holderField.innerText = (holderName.value).toUpperCase();
   holderField.style.color = "#fff";
 
   if(month.value === "" || year.value === "")return;
+  
 
   if (month.value <= 10){
     dateField.innerText = `0${month.value} / ${year.value}`;
