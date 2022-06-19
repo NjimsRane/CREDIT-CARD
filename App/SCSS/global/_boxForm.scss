@@ -1,6 +1,7 @@
 .boxForm {
   width: 100%;
   max-width: 36em;
+
   display: flex;
   flex-direction: column;
 
@@ -42,10 +43,12 @@
     .holder {
       input {
         width: 97.5%;
+        padding: 0 0.5em;
       }
     }
     .dateCvvInfos {
       display: flex;
+
       .dateCvvInfo {
         text-align: center;
       }
@@ -53,8 +56,10 @@
       .year {
         margin-left: 0.5em;
       }
+
       .cvvNumber {
         margin-left: 12.5em;
+
         input {
           width: 5em;
           text-align: center;
@@ -62,17 +67,18 @@
       }
     }
   }
+
   .button {
     margin-inline: auto;
+
     .btn {
       border: none;
       outline: none;
       cursor: pointer;
 
-      background-color: var(--BG-COLOR1);
       padding: 0.6em 9em;
       border-radius: 3px;
-      color: var(--BG-COLOR2);
+
       letter-spacing: 2px;
     }
   }

@@ -10,5 +10,58 @@ body {
       radial-gradient(rgba(0, 0, 0, 0.1) 15%, transparent 26%) 8px 9px;
 
     background-size: 16px 16px;
+
+    .button {
+      .btn {
+        background-color: var(--BG-COLOR1);
+        color: var(--BG-COLOR2);
+      }
+    }
+
+    .card {
+      .cardImage {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.6)
+          ),
+          url(/Images/map.png);
+        background-position: center center;
+        background-size: cover;
+      }
+
+      .frontCard {
+        background-image: linear-gradient(
+          45deg,
+          var(--BG-COLOR1),
+          var(--BG-COLOR)
+        );
+
+        main {
+          color: var(--BG-COLOR2);
+        }
+        footer {
+          color: #999;
+        }
+      }
+
+      .backCard {
+        background-image: linear-gradient(
+          45deg,
+          var(--BG-COLOR1),
+          var(--BG-COLOR)
+        );
+
+        .blackBar {
+          background-color: #111;
+        }
+
+        .cvvCode {
+          background-color: var(--BG-COLOR2);
+        }
+        .moto {
+          color: var(--BG-COLOR2);
+        }
+      }
+    }
   }
 }
